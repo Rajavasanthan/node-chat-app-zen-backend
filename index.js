@@ -29,6 +29,6 @@ io.on("connection",function(socket){
 
 
 
-server.listen(3000,function(){
-     console.log("App running in port 3000");
+server.listen(process.env.PORT || 3000,function(){
+     console.log("App running in port " + process.env.PORT || 3000);
 })
